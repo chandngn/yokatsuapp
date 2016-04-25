@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js"></script>
+  <script>
+    ons.bootstrap();
+
+  </script>
+  <style>
+    .item {
+      padding: 10px;
+      line-height: 1;
+    }
+    .item-thum {
+      background-color: #DF01A5;
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+    }
+    .item-title {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .item-desc {
+      font-size: 14px;
+      color: #81BEF7;
+      line-height: 1.3;
+      margin: 4px 0 0 0;
+      padding: 0 30px 0 0;
+    }
+    .item-label {
+      font-size: 12px;
+      color: #999;
+      float: right;
+    }
+  </style>
+</head>
+
+
+<body>    
+
+  <ons-navigator page="list.html" var="app.navi"></ons-navigator>
+
+  <ons-template id="list.html">
+    <ons-page id="list-page">
+      <ons-toolbar>
+        <div class="center">ジャンル</div>
+      </ons-toolbar>
+
+      <ons-list>
+
+        <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title"><font color="#DF01A5">買う</font></span>
+                <span class="item-label">かう</span>
+                
+              </header>
+              <p class="item-desc">お買い物スポットを紹介！</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title"><font color="#2EFE2E">泊まる</font></span>
+                <span class="item-label">とまる</span>
+              </header>
+              <p class="item-desc">宿泊施設をを紹介！</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title"><font color="#2E64FE">遊ぶ</font></span>
+                <span class="item-label">あそぶ</span>
+              </header>
+              <p class="item-desc">遊べるスポットを紹介！</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+         <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>　
+                <span class="item-title"><font color="#AC58FA">食べる</font></span>
+                <span class="item-label">たべる</span>
+              </header>
+              <p class="item-desc">おいしいカフェなどを紹介！</p>
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+         <ons-list-item modifier="chevron" class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title"><font color="#F4FA58">景色</font></span>
+                <span class="item-label">けしき</span>
+              </header>
+              <p class="item-desc">絶景のスポットを紹介！</p>
+            </ons-col>
+          </ons-row>                          
+        </ons-list-item>
+      </ons-list>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="detail.html">
+    <ons-page id="detail-page">
+
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="item">
+          <ons-row>
+            <ons-col width="60px"> 
+              <div class="item-thum"></div>
+            </ons-col>
+            <ons-col>
+              <header>
+                <span class="item-title">あ</span>
+                <span class="item-label"></span>
+              </header>
+              <p class="item-desc"></p>
+            </ons-col>
+          </ons-row>
+        </ons-list-item>
+        
+        </ons-list-item>
+      </ons-list>
+
+      <ons-list style="margin-top: 10px">
+        <ons-list-item class="item">
+          <header>
+            <span class="item-title"></span>
+          </header>
+          <p class="item-desc"></p>
+        </ons-list-item>
+        
+      </ons-list>
+
+      <br>
+
+    </ons-page>
+  </ons-template>
+
+</body>
+
+</html>
